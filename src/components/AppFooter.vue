@@ -1,90 +1,7 @@
 <template>
-  <div id="app">
-    <div id="nav">
-
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
-    
-    
-    <div class="site-navbar-wrap">
-      <div class="site-navbar-top">
-        <div class="container py-3">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <a href="#" class="p-2 pl-0"><span class="icon-twitter"></span></a>
-              <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
-              <a href="#" class="p-2 pl-0"><span class="icon-instagram"></span></a>
-            </div>
-            <div class="col-6">
-              <div class="d-flex ml-auto">
-                <a href="#" class="d-flex align-items-center ml-auto mr-4">
-                  <span class="icon-phone mr-2"></span>
-                  <span class="d-none d-md-inline-block">youremail@domain.com</span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="icon-envelope mr-2"></span>
-                  <span class="d-none d-md-inline-block">+1 291 2830 302</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="site-navbar">
-        <div class="container py-1">
-          <div class="row align-items-center">
-            <div class="col-2">
-            
-              <h1 class="mb-0 site-logo">
-              <h1 class="mb-0 site-logo"><router-link to="/">Interior</router-link></h1>
-              </h1>
-            </div>
-            <div class="col-10">
-              <nav class="site-navigation text-right" role="navigation">
-                <div class="container">
-                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-                  <ul class="site-menu js-clone-nav d-none d-lg-block">
-                    <li>
-                    <router-link to="/">Home</router-link>
-                    <!--<a href="index-2.html">Home</a>-->
-                    </li>
-                    <li>
-                     <li><router-link to="/aboutus">About Us</router-link>
-                    </li>
-                    <li><router-link to="/projects">Projects</router-link>
-                     
-                    </li>
-                    <li><router-link to="/news">News</router-link>
-                    </li>
-                    <li><router-link to="/services">Services</router-link>
-                    <li>
-                    </li>
-                    <li><router-link to="/contact">Contact</router-link>
-                    <li>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-   
-
-      <!--<router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>-->
-    </div>
-    <router-view />
-
- <footer class="site-footer border-top">
+  <div>
+  
+   <footer class="site-footer border-top">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-5 mb-lg-0">
@@ -195,27 +112,17 @@
         </div>
       </div>
     </footer>
-
   </div>
-  </div>
+  
   
 </template>
 
+<script>
+export default {
+name: 'AppFooter',
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
- 
 
-#nav a {
-  font-weight: bold;
-}
-
-#nav a.router-link-exact-active {
-  color: rgb(255, 255, 255);
-}
 </style>
